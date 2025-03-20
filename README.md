@@ -32,6 +32,11 @@ The goal of our project is to develop a model that forecasts future consumer onl
 * Clean the data
 * Normalize and standardize the data for the ML model
 * Create ML models
+
+<br><br>
+
+### Findings:
+
 * Create initial visualizations
 * Write Python script that initializes and trains an ML model using Scikit-learn (or another ML library), splits the data into training and testing sets, and evaluates the model’s predictive power (aim for at least 75% accuracy or 0.80 R-squared)
 * Create ML model visualizations
