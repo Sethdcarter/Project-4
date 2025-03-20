@@ -41,6 +41,7 @@ The goal of our project is to develop a model that forecasts future consumer onl
 
 ### Findings:
 # ADD IN OBSERVATIONS AND GRAPHS
-Maching Learning Model Classification Report
+Maching Learning Model Classification Report:
+
 ![Classification Report](https://github.com/user-attachments/assets/2e7c991c-c2fa-4533-a7d6-61256656a5f6)
 
