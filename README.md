@@ -5,6 +5,14 @@
 
 <br><br>
 
+### Dataset To Be Used:
+* Online Sales Dataset - Online Shopping Patterns and Retail Performance Dataset
+    * Number of Records: 49,782
+    * Dates: 1/1/2020 - 9/5/2025
+    * Columns: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country, Discount, PaymentMethod, ShippingCost, Category, SalesChannel, ReturnStatus, ShipmentProvider, WarehouseLocation, OrderPriority
+
+<br><br>
+
 ### Project Description Outline:
 
 The goal of our project is to develop a model that forecasts future consumer online purchases based on online shopping data. We will investigate various key factors that influence purchasing decisions, including the relationships between payment methods, the impact of discounts on sales, and purchase trends across different countries overtime. Additionally, we will explore other relevant patterns within the data to uncover valuable insights that can help businesses optimize their sales strategies and anticipate customer behavior.
@@ -17,14 +25,6 @@ The goal of our project is to develop a model that forecasts future consumer onl
 * Which categories had the highest number of sales?
 * Is it possible to predict what someone will buy?
 * What items get returned the most?
-
-<br><br>
-
-### Dataset To Be Used:
-* Online Sales Dataset - Online Shopping Patterns and Retail Performance Dataset
-    * Number of Records: 49,782
-    * Dates: 1/1/2020 - 9/5/2025
-    * Columns: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country, Discount, PaymentMethod, ShippingCost, Category, SalesChannel, ReturnStatus, ShipmentProvider, WarehouseLocation, OrderPriority
 
 <br><br>
 
