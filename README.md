@@ -29,6 +29,7 @@ The goal of our project is to develop a model that forecasts future consumer onl
 <br><br>
 
 ### Tasks:
+# ADD IN TASKS AND HOW WE DID THEM
 * Clean the data
 * Normalize and standardize the data for the ML model
 * Create ML models
@@ -39,4 +40,4 @@ The goal of our project is to develop a model that forecasts future consumer onl
 <br><br>
 
 ### Findings:
-
+# ADD IN OBSERVATIONS AND GRAPHS
