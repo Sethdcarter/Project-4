@@ -71,7 +71,7 @@ The goal of our project is to develop a model that forecasts future consumer onl
 5. **Create ML models**
 
    
-    *Data Preprocessing:
+   * **Data Preprocessing:**
    
       *The dataset (online_sales_dataset.csv) is loaded into a pandas DataFrame.
       *The InvoiceDate is converted to datetime format.
