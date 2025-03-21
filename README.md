@@ -29,9 +29,6 @@ The goal of our project is to develop a model that forecasts future consumer onl
 <br><br>
 
 ### Tasks:
-# ADD IN TASKS AND HOW WE DID THEM
-
-<br>
 
 1. **Data Ingestion & Preparation**
    * **CSV File Loading:**
@@ -70,57 +67,38 @@ The goal of our project is to develop a model that forecasts future consumer onl
       * Converted any date periods to strings (if needed) to ensure compatibility with SQLite.
       * Saved the standardized and normalized DataFrames to a local SQLite database (`sales_data.db`) for further analysis and ML modeling.
 
-5. **Create ML models**
-
-   
+5. **Create ML Models**
    * **Data Preprocessing:**
-   
-      *The dataset (online_sales_dataset.csv) is loaded into a pandas DataFrame.
-      *The InvoiceDate is converted to datetime format.
-      *A new column TotalSales is calculated by multiplying Quantity, UnitPrice, and applying the Discount.
-   
+      * The dataset (online_sales_dataset.csv) is loaded into a pandas DataFrame.
+      * The InvoiceDate is converted to datetime format.
+      * A new column TotalSales is calculated by multiplying Quantity, UnitPrice, and applying the Discount.
   * **Customer's Last Purchase Information:**
-   
-      *The latest purchase date for each customer is calculated using groupby on CustomerID.
-      *This date is merged into the dataset to create a new column, LastPurchaseDate.
-   
+      * The latest purchase date for each customer is calculated using groupby on CustomerID.
+      * This date is merged into the dataset to create a new column, LastPurchaseDate.
   * **Active Status Calculation:**
-   
-      *The threshold date is set to 90 days before the most recent purchase date.
-      *Customers whose last purchase is older than the threshold are labeled as inactive (0), and those whose last purchase is within the last 90 days are marked as active (1).
-   
+      * The threshold date is set to 90 days before the most recent purchase date.
+      * Customers whose last purchase is older than the threshold are labeled as inactive (0), and those whose last purchase is within the last 90 days are marked as active (1).
   * **Feature Engineering:**
-   
-      *New customer-level features are aggregated, such as:
-         *total_spent: Total money spent by the customer.
-         *purchase_count: Number of unique purchases made by the customer.
-         *avg_discount: Average discount the customer received.
-      *These features are merged with the Active status.
-   
+      * New customer-level features are aggregated, such as:
+         * total_spent: Total money spent by the customer.
+         * purchase_count: Number of unique purchases made by the customer.
+         * avg_discount: Average discount the customer received.
+      * These features are merged with the Active status.
   * **Model Training:**
-   
-      *The dataset is split into training and test sets (80%/20%).
-      *A Logistic Regression model is trained to predict the Active status of a customer.
-      *The model is evaluated using classification report and confusion matrix.
-   
+      * The dataset is split into training and test sets (80%/20%).
+      * A Logistic Regression model is trained to predict the Active status of a customer.
+      * The model is evaluated using classification report and confusion matrix.
   * **Model Evaluation:**
-   
-      *The model's performance is shown in a classification report, which provides precision, recall, f1-score, and support for each class (active vs inactive).
-      *The confusion matrix is also printed to show true positives, false positives, true negatives, and false negatives.
-   
+      * The model's performance is shown in a classification report, which provides precision, recall, f1-score, and support for each class (active vs inactive).
+      * The confusion matrix is also printed to show true positives, false positives, true negatives, and false negatives.
    
 7. **Create ML model visualizations**
-
    * **Learning Curve:**
-     
-      *The learning curve is plotted, showing the accuracy of the model for different training set sizes.
+      * The learning curve is plotted, showing the accuracy of the model for different training set sizes.
 
 <br><br>
 
 ### Findings:
-# ADD IN OBSERVATIONS AND GRAPHS
-
-<br>
 
 * **Total Sales Trench Over Time**
    * **Slight Upward Trend:** The red regression line has a gentle positive slope, indicating that overall monthly total sales are increasing over time, although the increase is modest
@@ -175,24 +153,17 @@ The goal of our project is to develop a model that forecasts future consumer onl
 
 <br>
 
+* **Maching Learning Model Classification Report:**
+   ![Classification Report](https://github.com/user-attachments/assets/2e7c991c-c2fa-4533-a7d6-61256656a5f6)
 
-
-Maching Learning Model Classification Report:
-
-![Classification Report](https://github.com/user-attachments/assets/2e7c991c-c2fa-4533-a7d6-61256656a5f6)
-
-
-**Dataset had serious limitations**
-
-* Wall clock was the most expensive item
-* Furniture had a max cost of $100
-* Data appeared to be standardized, resulting in difficulty in generating meaningful insights
-* Could not get Machine Learning models to an accuracy of .75 (besides Repeat Customers), even with additional features
+* **Dataset had serious limitations**
+   * Wall clock was the most expensive item
+   * Furniture had a max cost of $100
+   * Data appeared to be standardized, resulting in difficulty in generating meaningful insights
+   * Could not get Machine Learning models to an accuracy of .75 (besides Repeat Customers), even with additional features
 
 ![Monthly Sales Trends](https://github.com/Sethdcarter/Project-4/blob/main/Images/monthly_sales_trends.png)
 
-**Lessons Learned**
-
-* Knowing your data is important
-* If the dataset itself is flawed, the conclusions are difficult or impossible to find
-
+* **Lessons Learned**
+   * Knowing your data is important
+   * If the dataset itself is flawed, the conclusions are difficult or impossible to find
