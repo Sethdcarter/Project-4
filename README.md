@@ -72,23 +72,23 @@ The goal of our project is to develop a model that forecasts future consumer onl
       * The dataset (online_sales_dataset.csv) is loaded into a pandas DataFrame.
       * The InvoiceDate is converted to datetime format.
       * A new column TotalSales is calculated by multiplying Quantity, UnitPrice, and applying the Discount.
-  * **Customer's Last Purchase Information:**
+   * **Customer's Last Purchase Information:**
       * The latest purchase date for each customer is calculated using groupby on CustomerID.
       * This date is merged into the dataset to create a new column, LastPurchaseDate.
-  * **Active Status Calculation:**
+   * **Active Status Calculation:**
       * The threshold date is set to 90 days before the most recent purchase date.
       * Customers whose last purchase is older than the threshold are labeled as inactive (0), and those whose last purchase is within the last 90 days are marked as active (1).
-  * **Feature Engineering:**
+   * **Feature Engineering:**
       * New customer-level features are aggregated, such as:
          * total_spent: Total money spent by the customer.
          * purchase_count: Number of unique purchases made by the customer.
          * avg_discount: Average discount the customer received.
       * These features are merged with the Active status.
-  * **Model Training:**
+   * **Model Training:**
       * The dataset is split into training and test sets (80%/20%).
       * A Logistic Regression model is trained to predict the Active status of a customer.
       * The model is evaluated using classification report and confusion matrix.
-  * **Model Evaluation:**
+   * **Model Evaluation:**
       * The model's performance is shown in a classification report, which provides precision, recall, f1-score, and support for each class (active vs inactive).
       * The confusion matrix is also printed to show true positives, false positives, true negatives, and false negatives.
    
