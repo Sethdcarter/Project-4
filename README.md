@@ -176,7 +176,23 @@ The goal of our project is to develop a model that forecasts future consumer onl
 <br>
 
 
+
 Maching Learning Model Classification Report:
 
 ![Classification Report](https://github.com/user-attachments/assets/2e7c991c-c2fa-4533-a7d6-61256656a5f6)
+
+
+**Dataset had serious limitations**
+
+* Wall clock was the most expensive item
+* Furniture had a max cost of $100
+* Data appeared to be standardized, resulting in difficulty in generating meaningful insights
+* Could not get Machine Learning models to an accuracy of .75 (besides Repeat Customers), even with additional features
+
+![Monthly Sales Trends](https://github.com/Sethdcarter/Project-4/blob/main/Images/monthly_sales_trends.png)
+
+**Lessons Learned**
+
+* Knowing your data is important
+* If the dataset itself is flawed, the conclusions are difficult or impossible to find
 
