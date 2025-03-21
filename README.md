@@ -110,6 +110,7 @@ The goal of our project is to develop a model that forecasts future consumer onl
 7. **Create ML model visualizations**
 
    * **Learning Curve:**
+     
       *The learning curve is plotted, showing the accuracy of the model for different training set sizes.
 
 <br><br>
