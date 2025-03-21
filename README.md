@@ -69,6 +69,8 @@ The goal of our project is to develop a model that forecasts future consumer onl
       * Saved the standardized and normalized DataFrames to a local SQLite database (`sales_data.db`) for further analysis and ML modeling.
 
 5. **Create ML models**
+
+   
     *Data Preprocessing:
       *The dataset (online_sales_dataset.csv) is loaded into a pandas DataFrame.
       *The InvoiceDate is converted to datetime format.
