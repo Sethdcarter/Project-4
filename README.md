@@ -35,8 +35,10 @@ The goal of our project is to develop a model that forecasts future consumer onl
 
 1. **Data Ingestion & Preparation**
    * **CSV File Loading:**
-      * Imported the original dataset (`shopping_data.csv`) using Python and Pandas.
+       *Imported the original dataset (`shopping_data.csv`) using Python and Pandas.
+     
       * Verified the file’s encoding, delimiter, and header structure to ensure a clean import.
+        
    * **Data Cleaning:**
       * **Handling Missing Values:** Identified missing entries in both numeric and categorical columns.
          * Filled numeric columns with mean values to maintain consistent distributions.
